@@ -18,7 +18,7 @@ const About = () => {
                         </p>
 
                         <p className="text-muted-foregrpound">
-                            Currently, I have developed strong foundational skills in HTML and CSS, which have allowed me to build clean, responsive layouts. I am actively learning JavaScript and Reaggct JS to make my websites more dynamic and interactive. While I am still in the process of gaining expertise, I am highly committed to continuous learning and always looking for opportunities to improve my craft.
+                            Currently, I have developed strong foundational skills in HTML and CSS, which have allowed me to build clean, responsive layouts. I am actively learning JavaScript and React JS to make my websites more dynamic and interactive. While I am still in the process of gaining expertise, I am highly committed to continuous learning and always looking for opportunities to improve my craft.
                         </p>
 
                         <div className="flex flex-col sm:flex-row gap-4 pt-4 justify-center">
