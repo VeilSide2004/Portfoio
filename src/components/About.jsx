@@ -26,7 +26,7 @@ const About = () => {
                                 Get in touch
                             </a>
 
-                            <a href="https://drive.google.com/file/d/1YK27N5gsBIqd3EgQWEeb4HdgmHkPJpA-/view?usp=sharing" className="cosmic-button" download>
+                            <a href="https://drive.google.com/file/d/1YK27N5gsBIqd3EgQWEeb4HdgmHkPJpA-/view?usp=sharing" target="_blank" className="cosmic-button" download>
                                 Download CV
                             </a>
 
