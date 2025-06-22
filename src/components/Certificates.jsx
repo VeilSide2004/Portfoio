@@ -6,21 +6,21 @@ const certificates = [
         id: 1,
         title: "5G for Everyone",
         issuer: "Coursera",
-        image: "/public/Certificates/5G.png",
+        image: "/Certificates/5G.png",
         link: "https://drive.google.com/file/d/17CE7GXWKmmncEi665vhM1HGJc1dCIcER/view?usp=sharing"
     },
     {
         id: 2,
         title: "Associate in Cybersecurity",
         issuer: "Fortinet",
-        image: "/public/Certificates/Fortinet.png",
+        image: "/Certificates/Fortinet.png",
         link: "https://drive.google.com/file/d/1VRu_Cdx9vi3aRbCxUqmL3RMJmM3EWbWT/view?usp=sharing"
     },
     {
         id: 3,
         title: "The Bits and Bytes of Computer Networking",
         issuer: "Coursera",
-        image: "/public/Certificates/Bits_Bytes.png",
+        image: "/Certificates/Bits_Bytes.png",
         link: "https://drive.google.com/file/d/17ZutNBKowRvk2_3uQH0Pu0L2uleHPyfT/view?usp=sharing"
     },
 
@@ -29,7 +29,7 @@ const certificates = [
         id: 4,
         title: "AWS Academy Machine Learning Foundation",
         issuer: "AWS",
-        image: "/public/Certificates/AWS.png",
+        image: "/Certificates/AWS.png",
         link: "https://drive.google.com/file/d/1RxRN9pm2yLtMPdT6Wj6P0UB5knDxJbnV/view?usp=sharing"
     },
 
@@ -37,7 +37,7 @@ const certificates = [
         id: 5,
         title: "Software Engineering essentials",
         issuer: "Coursera",
-        image: "/public/Certificates/Software_Engineering.png",
+        image: "/Certificates/Software_Engineering.png",
         link: "https://drive.google.com/file/d/1kJyU9jqWaZdEOuiJcs1R8M8kpCIczh4J/view?usp=sharing"
     },
 ];

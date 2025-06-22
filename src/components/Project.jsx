@@ -6,7 +6,7 @@ const projects = [
         id: 1,
         title: "Geo Pixel Analyzer",
         description: "GeoPixel Analyzer is an AI-powered tool that analyzes satellite images to detect and highlight changes in river water levels caused by natural calamities",
-        image: "/public/Projects/GeoPixel Analyzer.png",
+        image: "/Projects/GeoPixel-Analyzer.png",
         tags: ["Ai/ML", "Threshold model", "Streamlit"],
         githubURL: "https://github.com/VeilSide2004?tab=repositories"
     },
@@ -15,7 +15,7 @@ const projects = [
         id: 2,
         title: "GearQuest(E-commerse)",
         description: "GearQuest is an e-commerce platform designed for adventure enthusiasts to explore and purchase high-quality outdoor gear with a seamless user experience.",
-        image: "/public/Projects/Gear Quest.png",
+        image: "/Projects/Gear-Quest.png",
         tags: ["PHP", "HTML", "CSS", "Javascript", "MySQL", "Figma"],
         githubURL: "https://github.com/VeilSide2004/GearQuest"
     },
@@ -24,7 +24,7 @@ const projects = [
         id: 3,
         title: "UltraEdit-Clone",
         description: "I cloned the UltraEdit website to practice and improve my frontend skills by recreating its responsive layout, design, and interactive elements using modern web technologies.",
-        image: "/public/Projects/UltraEdit.png",
+        image: "/Projects/UltraEdit.png",
         tags: ["HTML", "CSS"],
         githubURL: "https://github.com/VeilSide2004/UltraEdit_clone"
 
