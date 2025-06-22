@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { cn } from "../lib/Utils";
 import { Menu, X } from "lucide-react";
+import ThemeToggle from "./ThemeToggle"; // Import your toggle here
 
 const navItems = [
     { name: "Home", href: "#hero" },
@@ -12,23 +13,21 @@ const navItems = [
 ];
 
 const Navbar = () => {
-    const [isMenuOpen, setIsMenuOpen] = useState(true);
+    // Menu starts closed
+    const [isMenuOpen, setIsMenuOpen] = useState(false);
 
     return (
-        <nav
-            className={cn(
-                "fixed w-full z-40 transition-all duration-300 py-3 bg-white/1 backdrop-blur-md shadow-sm"
-            )}
-        >
+        <nav className={cn("fixed w-full z-40 transition-all duration-300 py-3 bg-white/1 backdrop-blur-md shadow-sm")}>
             <div className="container flex items-center justify-between">
+                {/* Logo */}
                 <a className="text-xl font-bold text-primary flex items-center" href="#hero">
                     <span className="relative z-10">
                         <span className="text-glow text-foreground">VeilSide</span> Portfolio
                     </span>
                 </a>
 
-                {/* desktop menu */}
-                <div className="hidden md:flex space-x-8">
+                {/* Desktop Menu + Theme Toggle */}
+                <div className="hidden md:flex items-center space-x-8">
                     {navItems.map((item, key) => (
                         <a
                             key={key}
@@ -38,9 +37,11 @@ const Navbar = () => {
                             {item.name}
                         </a>
                     ))}
+                    {/* Theme Toggle button */}
+                    <ThemeToggle />
                 </div>
 
-                {/* mobile menu button */}
+                {/* Mobile Menu Button */}
                 <button
                     onClick={() => setIsMenuOpen((prev) => !prev)}
                     className="md:hidden p-2 text-foreground z-50"
@@ -49,7 +50,7 @@ const Navbar = () => {
                     {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
                 </button>
 
-                {/* mobile menu */}
+                {/* Mobile Menu */}
                 <div
                     className={cn(
                         "fixed top-0 left-0 w-full h-screen bg-black/80 backdrop-blur-2xl z-40 flex flex-col items-center justify-center transition-all duration-300 md:hidden",
@@ -62,18 +63,15 @@ const Navbar = () => {
                                 key={key}
                                 href={item.href}
                                 className="text-white hover:text-primary transition-colors duration-300"
-                                onClick={() => setIsMenuOpen(false)}
+                                onClick={() => setIsMenuOpen(false)} // Auto close on click
                             >
                                 {item.name}
                             </a>
                         ))}
+                        {/* Theme Toggle in mobile menu */}
+                        <ThemeToggle />
                     </div>
                 </div>
-
-
-
-
-
             </div>
         </nav>
     );
